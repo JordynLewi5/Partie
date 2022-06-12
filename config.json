@@ -1,5 +1,5 @@
 {
-    "token": ["DiscordJS Token"],
+    "token": ["Test Token","INSERT DISCORDJS TOKEN HERE"],
     "topgg": {
         "token": "TOPGG TOKEN",
         "authorization": ""
