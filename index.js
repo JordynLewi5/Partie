@@ -117,11 +117,11 @@ client.login(config.token[1])
 
 
 
-const patreon = require('patreon')
-const patreonAPIClient = patreon.patreon(config.patreon[1].accessToken)
-setInterval(() => {
-  // patreonAPIClient('/current_user/campaigns').then(({ store }) => {
-  //   // console.log(store.findAll('campaign'))
-  // })
-}, 10000)
+// const patreon = require('patreon')
+// const patreonAPIClient = patreon.patreon(config.patreon[1].accessToken)
+// setInterval(() => {
+//   // patreonAPIClient('/current_user/campaigns').then(({ store }) => {
+//   //   // console.log(store.findAll('campaign'))
+//   // })
+// }, 10000)
 
