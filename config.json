@@ -1,22 +1,22 @@
 {
-    "token": ["ODcyNTI0NTc4NTcwNzY4NDY2.YQrH1g.lXuCmjZB9K4A9OBYIkp2TIZtP-k", "ODE3NjA4NTIxNjc5ODk2NTg2.YEL_Rg.Ep6o03JmArnAhl_S4BPQOabQpqQ"],
+    "token": ["DiscordJS Token"],
     "topgg": {
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgxNzYwODUyMTY3OTg5NjU4NiIsImJvdCI6dHJ1ZSwiaWF0IjoxNjI4NzkyMzI2fQ.dP8TfP9di1PuiaQjxxkQmICcqAGmezjvfPNVopSMgvg",
-        "authorization": "!&4^B$&%wi9&^589d2753v&"
+        "token": "TOPGG TOKEN",
+        "authorization": ""
     },
     "patreon": [{
-        "clientID": "Xht0AmFK6aZXEn6Mbo3Vn9p06P9_5xEyEr8rEiooCiaWr-JdWwrOfdNYe4s5QN5H",
-        "clientSecret": "ShGSa3yLpPxqYKbL0-_7x5Bk8m_FdT6-0-cWwErbYE8tQiVkwqb_pYFnTdE-ioNf",
-        "accessToken": "mxvSZCCF9Etv90Vkh5W_LXNYslc9u1t6e-b2SHhSeQM",
-        "refreshToken": "EM8HQ1K2i5BUcHG5aGtZ9Q-2mDcrHE-VBxz1t85a8kE",
-        "campaignID": "7103348",
+        "clientID": "",
+        "clientSecret": "",
+        "accessToken": "",
+        "refreshToken": "",
+        "campaignID": "",
         "testing?": false
     },{
-        "clientID": "MD47uRcoQV4kTbxlJ30mBceLOJf7HYWtqOSHRv5qhEOlb7zHMulmk1IxrS-X0lhE",
-        "clientSecret": "_xOGBsGpV0a4XLQ_-axk0sINEmwUaSfXpH4EyT4d0Xr6_a6O2tWUPdszUwPBJ64r",
-        "accessToken": "njFZuhG5fAEcAoa2_61liUgpYI4HxkRS7xeeJIkZdMc",
-        "refreshToken": "cpv0TtKSEbSxkPs6psVRO3vwLI6jGv7digsEtOWRoTo",
-        "campaignID": "7264225",
+        "clientID": "",
+        "clientSecret": "",
+        "accessToken": "",
+        "refreshToken": "",
+        "campaignID": "",
         "testing?": true
     }],
     "settings": {
