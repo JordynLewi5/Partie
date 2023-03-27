@@ -47,7 +47,13 @@ function reload(client){
                 if (guild.channels.cache.get(creationChannel.creationChannelID) !== undefined) {
                     //Add recreated creation channel class to the creation channnels list in each guild.
                     if (!creationChannel.defaultMode) creationChannel.defaultMode = 'private'
-                    creationChannels.push(new CreationChannel(creationChannel.guildID, creationChannel.type, creationChannel.creationChannelID, creationChannel.parentChannelID, creationChannel.limit, creationChannel.defaultMode))
+                    creationChannels.push(new CreationChannel(
+                        creationChannel.guildID, 
+                        creationChannel.type, 
+                        creationChannel.creationChannelID, 
+                        creationChannel.parentChannelID, 
+                        creationChannel.limit, 
+                        creationChannel.defaultMode))
                 }
 
             })
@@ -64,12 +70,32 @@ function reload(client){
                         //Party is empty, or has been deleted
                         //if (i === 0) {
                             try {
-                                await new Party(guild, party.type, party.leaderID, party.creationChannelID, party.parentID, party.voiceID, party.textID, party.mode, party.limit, client).deleteParty(client)
+                                await new Party(
+                                    guild, 
+                                    party.type, 
+                                    party.leaderID, 
+                                    party.creationChannelID, 
+                                    party.parentID, 
+                                    party.voiceID, 
+                                    party.textID, 
+                                    party.mode, 
+                                    party.limit,
+                                    client).deleteParty(client)
                             } catch {}
                         //}
                     }
                     if (guild.channels.cache.get(party.voiceID)) {
-                        parties.push(new Party(guild, party.type, party.leaderID, party.creationChannelID, party.parentID, party.voiceID, party.textID, party.mode, party.limit, client))
+                        parties.push(new Party(
+                            guild, 
+                            party.type, 
+                            party.leaderID, 
+                            party.creationChannelID, 
+                            party.parentID,
+                            party.voiceID, 
+                            party.textID, 
+                            party.mode, 
+                            party.limit, 
+                            client))
                     }
                 } catch (err) {
                     console.log(err)
@@ -81,17 +107,22 @@ function reload(client){
             }
             if (!guildProfile.botUpdateChannelID) guildProfile.botUpdateChannelID = null
             //Add recreated guild profile class to the list.
-            client.guildProfileList.push(new GuildProfile(guildProfile.guildID, guildProfile.settings, creationChannels, parties, guildProfile.commandToggles, guildProfile.setupInProgress, guildProfile.botUpdateChannelID))
+            client.guildProfileList.push(new GuildProfile(
+                guildProfile.guildID, 
+                guildProfile.settings,
+                creationChannels,
+                parties,
+                guildProfile.commandToggles,
+                guildProfile.setupInProgress,
+                guildProfile.botUpdateChannelID))
 
         }
     })
     i ++
 
     //Update local storage
-    //if (i % 100 === 0) {
-        localStorage.setItem('GuildProfileList', JSON.stringify(client.guildProfileList))
-        localStorage.setItem('GuildCount', JSON.stringify(client.guildProfileList.length))
-    //}
+    localStorage.setItem('GuildProfileList', JSON.stringify(client.guildProfileList))
+    localStorage.setItem('GuildCount', JSON.stringify(client.guildProfileList.length))
 }
 
 module.exports = reload
